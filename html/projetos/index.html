@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | SleeptyLu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { cyan: { 400: '#22d3ee', 500: '#06b6d4' } } } }
+        }
+    </script>
+    <style>
+        .custom-link {
+            color: #22d3ee; text-decoration: none; position: relative; transition: color 0.3s;
+        }
+        .custom-link::after {
+            content: ''; position: absolute; width: 100%; height: 2px; bottom: -2px; left: 0;
+            background-color: #22d3ee; transform: scaleX(0); transition: transform 0.3s ease-out;
+        }
+        .custom-link:hover::after { transform: scaleX(1); }
+    </style>
+</head>
+<body class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-950 via-zinc-950 to-black min-h-screen text-white p-6 md:p-20">
+
+    <div class="max-w-4xl mx-auto space-y-16">
+        <a href="index.html" class="text-zinc-500 hover:text-white transition-colors flex items-center gap-2">
+            ← Voltar para a Home
+        </a>
+
+        <header class="space-y-6">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500">
+                MEUS PROJETOS
+            </h1>
+            <p class="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed">
+                Aqui documento a jornada de criação do meu website de conquistas e o desenvolvimento do meu jogo cozy.
+            </p>
+        </header>
+
+        <hr class="border-white/10">
+
+        <article class="space-y-12">
+            
+            <section class="space-y-6">
+                <div class="flex items-center gap-4">
+                    <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-bold rounded-full border border-cyan-500/20">EM DESENVOLVIMENTO</span>
+                    <h2 class="text-3xl font-bold">Website de Análise de Conquistas</h2>
+                </div>
+                <div class="prose prose-invert lg:prose-xl text-zinc-300 space-y-4">
+                    <p>
+                        Este projeto nasceu da minha necessidade como platinadora de ter um porto seguro para as minhas estatísticas. Atualmente, os dados estão espalhados entre Steam, PlayStation e Xbox. O objetivo deste site é...
+                    </p>
+                    <p>
+                        Estou a utilizar **JavaScript moderno** e planeio integrar APIs de terceiros para puxar os dados automaticamente. A maior dificuldade tem sido lidar com as políticas de privacidade das plataformas, mas o progresso tem sido constante.
+                    </p>
+                </div>
+            </section>
+
+            <section class="space-y-6 pt-10">
+                <div class="flex items-center gap-4">
+                    <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-bold rounded-full border border-purple-500/20">PLANEAMENTO</span>
+                    <h2 class="text-3xl font-bold">Jogo Cozy de Pesca</h2>
+                </div>
+                <div class="prose prose-invert lg:prose-xl text-zinc-300 space-y-4">
+                    <p>
+                        O conceito por trás deste jogo é a tranquilidade. Inspirada por títulos como Stardew Valley, quero criar uma experiência onde a pesca não seja apenas uma mecânica secundária, mas o coração da narrativa.
+                    </p>
+                    <p>
+                        Para a parte visual, como mencionei na página inicial, estou a explorar a técnica de **Pixel Art sobre modelos 3D low-poly**, o que dá um aspeto nostálgico mas com profundidade moderna.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+
+        <footer class="pt-20 text-center text-zinc-600 text-sm">
+            © 2026 Lucia SleeptyLu. Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
